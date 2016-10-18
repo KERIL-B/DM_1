@@ -1,0 +1,6 @@
+E:\vs2012\1progs\DM_InlineSearch\DM_InlineSearch\bin\Debug\DM_InlineSearch.exe.config
+E:\vs2012\1progs\DM_InlineSearch\DM_InlineSearch\bin\Debug\DM_InlineSearch.exe
+E:\vs2012\1progs\DM_InlineSearch\DM_InlineSearch\bin\Debug\DM_InlineSearch.pdb
+E:\vs2012\1progs\DM_InlineSearch\DM_InlineSearch\obj\Debug\DM_InlineSearch.csprojResolveAssemblyReference.cache
+E:\vs2012\1progs\DM_InlineSearch\DM_InlineSearch\obj\Debug\DM_InlineSearch.exe
+E:\vs2012\1progs\DM_InlineSearch\DM_InlineSearch\obj\Debug\DM_InlineSearch.pdb
