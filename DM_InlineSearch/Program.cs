@@ -63,11 +63,11 @@ namespace DM_InlineSearch
             #region Эксперимент
             Console.WriteLine("Experiment in process");
             int inlineSum = 0;
-            int minInline = n+1;
+            int minInline = n + 1;
             int maxInline = 0;
 
             int binarySum = 0;
-            int minBinary = n+1;
+            int minBinary = n + 1;
             int maxBinary = 0;
 
             for (int i = 0; i < repetitions; i++)
@@ -133,7 +133,7 @@ namespace DM_InlineSearch
         static private int BinarySearchCount(int[] arr, int key)
         {
             int count = 0;
-
+            Sort(arr);
             int i = -1;
             if (arr != null)
             {
@@ -166,5 +166,31 @@ namespace DM_InlineSearch
             return count;
         }
 
+        static private void Sort(int[] arr)
+        {
+            int n = arr.Length;
+            int Count = 0;
+            int d = arr.Length / 2; // начальное значение интервала
+            while (d > 0)  // цикл с уменьшением интервала до 1
+            {
+                bool Ok = true; // пузырьковая с интервалом d
+                while (Ok)      // цикл, пока есть перестановки
+                {
+                    Ok = false;
+                    for (int i = 0; i < n - d; i++)
+                        // сравнение эл-тов на интервале d
+                        if (arr[i] > arr[i + d])
+                        {
+                            int t = arr[i]; arr[i] = arr[i + d];
+                            arr[i + d] = t; // перестановка
+                            Ok = true; // признак перестановки
+                            Count++;
+                        }
+                }
+                d = d / 2;    // уменьшение интервала
+            }
+
+
+        }
     }
 }
